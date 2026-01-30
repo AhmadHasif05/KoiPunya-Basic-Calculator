@@ -41,6 +41,7 @@
         width: 100%;
         max-width: 320px;   /* biar calculator muat phone */
         padding: 15px;
+        border-radius: 5px;
     }
 
     .calculator form input {
@@ -48,11 +49,18 @@
         height: 50px;
         font-size: 16px;    /* kecilkan tulisan */
         margin: 5px;        /* rapatkan spacing */
+        border-radius: 5px;
+        box-shadow: -4px -4px 7px rgba(255, 255, 255, 0.1),
+            3px 3px 3px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
     }
 
     form .display input {
+        text-align: right;
+        flex: 1;
         font-size: 28px;    /* display lebih kecil */
         height: 45px;
+        box-shadow: none;
     }
 
     form input.equal {
