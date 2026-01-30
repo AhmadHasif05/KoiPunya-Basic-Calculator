@@ -20,6 +20,7 @@
     border-radius: 10px;
 }
 
+/* Asal anda kekalkan */
 .calculator form input {
     border: 0;
     outline: 0;
@@ -34,21 +35,31 @@
     margin: 10px;
 }
 
-form .display {
-    display: flex;
-    justify-content: flex-end;
-    margin: 20px 0;
-}
-form .display input {
-    text-align: right;
-    flex: 1;
-    font-size: 45px;
-    box-shadow: none;
+/* Responsive untuk phone */
+@media (max-width: 480px) {
+    .calculator {
+        width: 100%;
+        max-width: 320px;   /* biar calculator muat phone */
+        padding: 15px;
+    }
+
+    .calculator form input {
+        width: 50px;        /* kecilkan butang */
+        height: 50px;
+        font-size: 16px;    /* kecilkan tulisan */
+        margin: 5px;        /* rapatkan spacing */
+    }
+
+    form .display input {
+        font-size: 28px;    /* display lebih kecil */
+        height: 45px;
+    }
+
+    form input.equal {
+        width: 110px;       /* "=" ikut scale phone */
+    }
 }
 
-form input.equal {
-    width: 145px;
-}
 
 form input.operator {
     color: #33ffd8;
