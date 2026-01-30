@@ -58,23 +58,24 @@
     form .display {
         display: flex;
         justify-content: flex-end;
-        margin: 10px 0;
+        margin: 20px 0;
     }
 
     form .display input {
         text-align: right;
         flex: 1;
         font-size: 28px;    /* display lebih kecil */
-        height: 45px;
         box-shadow: none;
     }
 
     form input.equal {
         width: 110px;       /* "=" ikut scale phone */
     }
+
+    form input.operator {
+        color: #33ffd8;
+    }
 }
 
 
-form input.operator {
-    color: #33ffd8;
-}
+
