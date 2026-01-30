@@ -34,6 +34,19 @@
     margin: 10px;
 }
 
+.calculator form div {
+    display:  grid;
+    grid-template-column: repeat(4, 1fr);
+    gap: 10px; 
+}
+
+/* Override default input size */ 
+.calculator form input { 
+    width: 100%; 
+    height: 60px;
+    margin: 0; 
+}
+
 form .display {
     display: flex;
     justify-content: flex-end;
